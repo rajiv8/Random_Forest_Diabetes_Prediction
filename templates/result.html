@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Diabetes-Prediction</title>
+</head>
+<body>
+    <h1 class="text-center m-3 badge-primary text-wrap">Diabetic Prediction</h1>
+    <div class="container ">
+        <form action="/" method="post">
+             <div class="form-group">
+            <label for="formGroupExampleInput1">Age</label>
+            <input type="text" class="form-control" id="formGroupExampleInput1" name="age" placeholder={{age}} required>
+            </div>
+            <div class="form-group">
+            <label for="formGroupExampleInput2">Body-Mass Index</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" name="bmi"  placeholder={{bmi}} required>
+            </div>
+            <div class="form-group">
+            <label for="formGroupExampleInput3">Pregnancies</label>
+            <input type="text" class="form-control" id="formGroupExampleInput3" name="Pregnancies"  placeholder={{Pregnancies}} required>
+            </div>
+            <div class="form-group">
+            <label for="formGroupExampleInput4">Insulin</label>
+            <input type="text" class="form-control" id="formGroupExampleInput4" name="insulin"  placeholder={{insulin}} required>
+            </div>
+
+            <div class="form-group">
+            <label for="formGroupExampleInput5">Glucose Level</label>
+            <input type="text" class="form-control" id="formGroupExampleInput5" name="glucose" placeholder={{glucose}} required>
+            </div>
+            <div class="form-group">
+            <label for="formGroupExampleInput6">Blood Pressure</label>
+            <input type="text" class="form-control" id="formGroupExampleInput6" name="BP" placeholder={{BP}} required>
+            </div>
+            <div class="form-group">
+            <label for="formGroupExampleInput7">Skin Thickness</label>
+            <input type="text" class="form-control" id="formGroupExampleInput7" name="thickness"  placeholder={{thickness}} required>
+            </div>
+            <div class="form-group">
+            <label for="formGroupExampleInput8">Diabetes Pedigree Function</label>
+            <input type="text" class="form-control" id="formGroupExampleInput8" name="PedigreeFunction"  placeholder={{PedigreeFunction}} required>
+            </div>
+            <h2 class="text-center  badge-primary text-wrap">The Person is {{res}}</h2>
+        </form>
+            <a href="/"><button type="submit" class="btn btn-primary mt-3">Back</button></a>
+    </div>
+
+</body>
+</html>
